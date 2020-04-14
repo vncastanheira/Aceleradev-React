@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	--mobile-width: 720px;
+	background-color: #fafafa;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 1;
+	background-color: #fff;
+	border-bottom: 1px solid lightgrey;
+}
+
+.nav__content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: var(--mobile-width);
+	height: 100%;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+.nav__logo, .nav__logo img {
+	height: 100%;
+}
+
+.nav__messages {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeline {
+	width: var(--mobile-width);
+	margin: 0 auto;
+	padding-top: 60px;
+	height: 100vh;
+}
+
+.stories {
+	width: 100%;
+	height: 160px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.stories__story {
+	margin-right: 20px;
+}
+
+.stories__story-highlight::before {
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 80px;
+	margin-top: -5px;
+	margin-left: -5px;
+	background: #d6249f;
+	background: linear-gradient(45deg, #fdf497, #fd5949, #d6249f,#285AEB );
+	z-index: -2;
+	border-radius: 100%;
+}
+
+.stories__story-highlight::after {
+	position: absolute;
+	content: '';
+	width: 74px;
+	height: 74px;
+	margin-top: -2px;
+	margin-left: -72px;
+	background: white;
+	z-index: -1;
+	border-radius: 100%;
+}
+
+.profilephoto {
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+}
+
+.profilephoto-cardsize {
+
+}
