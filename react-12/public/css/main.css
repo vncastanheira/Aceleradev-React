@@ -16,7 +16,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 60px;
-	z-index: 1;
+	z-index: 10;
 	background-color: #fff;
 	border-bottom: 1px solid lightgrey;
 }
@@ -96,5 +96,51 @@ body {
 }
 
 .profilephoto-cardsize {
+	width: 32px;
+	height: 32px;
+}
 
+.postcard {
+	box-shadow: 0px 0px 2px #cfcfcf;
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+}
+
+.postcard__menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 10px;
+	justify-content: space-between;
+	height: 50px;
+}
+
+.postcard__profile {
+
+}
+
+.postcard__more {
+
+}
+
+.postcard__photo {
+	width: var(--mobile-width);
+	height: auto;
+}
+
+.postcard__options {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 10px;
+	justify-content: space-between;
+	height: 50px;
+}
+
+.postcard__likeandcomment {
+
+}
+
+.postcard__bookmark {
+	
 }
